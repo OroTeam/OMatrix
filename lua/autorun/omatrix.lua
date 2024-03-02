@@ -36,7 +36,7 @@ function OMatrix:get(row, col)
     return self[row][col]
 end
 
-function OMatrix:tostring()
+function OMatrix:__tostring()
     local str = ""
     for i = 1, #self do
         local row = self[i]
